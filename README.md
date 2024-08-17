@@ -1,4 +1,4 @@
-# 🇵🇾 MITIC Paraguay - Página Principal (Recreación)
+# MITIC Paraguay - Página Principal (Recreación)
 
 ![MITIC Paraguay Preview](ruta/a/tu/imagen-preview.png)
 
