@@ -1,0 +1,73 @@
+---
+const navItems = [
+
+  { 
+    title: 'Inicio', 
+  label: 'inicio',
+  url: "/#inicio",
+},
+
+  { 
+    title: 'Institucional',
+    label: 'institucional',
+    url: "/#institucional",
+},
+
+  { 
+    title: 'Viceministerios', 
+    label: 'viceministerios',
+  url: "/#viceministerios",
+},
+
+  { 
+    title: 'Transparencia',
+    label: 'transparencia',
+    url: "/#transparencia",
+},
+
+  { 
+    title: 'Noticias', 
+    label: 'noticias',
+    url: "/#noticias",
+},
+
+  { 
+    title: 'Recursos', 
+    label: 'recursos',
+    url: "/#recursos",
+},
+
+  { 
+    title: 'Transformación Digital', 
+    label: 'transparencia-digital',
+    url: "/#transparencia-digital",
+},
+
+  { 
+    title: 'Contacto',
+    label: 'contacto',
+    url: "/#contacto", 
+},
+  
+]
+---
+
+<header
+  class="sticky top-0 bg-white flex items-center justify-center w-full"
+>
+  <nav
+    class="flex gap-1 justify-center items-center"
+  >
+    {
+      navItems.map((link) => (
+        <a
+         class="text-black flex items-center py-2 px-4 hover:underline "
+        aria-label={link.label}
+          href={link.url}
+        >
+            {link.title}
+        </a>
+      ))
+    }
+  </nav>
+</header>
